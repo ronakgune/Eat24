@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "336083169686",
+    "firebase_url": "https://eat24-749c3.firebaseio.com",
+    "project_id": "eat24-749c3",
+    "storage_bucket": "eat24-749c3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336083169686:android:b9eaafa97af0d0d0",
+        "android_client_info": {
+          "package_name": "com.example.tejas.eat24"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "336083169686-dieqs4ksk0flaironfl0634e5ndv2eir.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tejas.eat24",
+            "certificate_hash": "325ef42880ec1f9203f08d465b966d7250b966fe"
+          }
+        },
+        {
+          "client_id": "336083169686-3ruruh5rdtr0va2nd1soedre7aet90gi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB38Ju0V0x_CK2oACNbnxSJGuCRvBClQcA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "336083169686-3ruruh5rdtr0va2nd1soedre7aet90gi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
