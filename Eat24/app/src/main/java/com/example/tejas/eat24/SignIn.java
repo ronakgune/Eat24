@@ -5,7 +5,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EdgeEffect;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.tejas.eat24.Model.User;
@@ -27,9 +29,9 @@ public class SignIn extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
 
-        edtPassword = (MaterialEditText)findViewById(R.id.edtPassword);
-        edtPhone = (MaterialEditText)findViewById(R.id.edtPhone);
-        btnSignIn = (Button)findViewById(R.id.btnSignIn);
+        edtPassword = (EditText) findViewById(R.id.edtPassword);
+        edtPhone = (EditText) findViewById(R.id.edtPhone);
+        btnSignIn = (Button) findViewById(R.id.btnSignIn);
 
         //Init Firebase
 

@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.tejas.eat24.Model.User;
@@ -17,17 +19,18 @@ import com.rengwuxian.materialedittext.MaterialEditText;
 
 public class SignUp extends AppCompatActivity {
 
-    MaterialEditText edtPhone,edtName,edtPassword;
+    EditText edtPhone,edtName,edtPassword;
     Button btnSignUp;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
-        edtName = (MaterialEditText)findViewById(R.id.edtName);
-        edtPassword = (MaterialEditText)findViewById(R.id.edtPassword);
-        edtPhone = (MaterialEditText)findViewById(R.id.edtPhone);
+        edtName = (EditText) findViewById(R.id.edtName);
+        edtPassword = (EditText) findViewById(R.id.edtPassword);
+        edtPhone = (EditText) findViewById(R.id.edtPhone);
 
         btnSignUp = (Button)findViewById(R.id.btnSignUp);
 

@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <com.rengwuxian.materialedittext.MaterialEditTextView
+        <!-- <com.rengwuxian.materialedittext.MaterialEditTextView
             android:id="@+id/edtPhone"
             android:hint="@name/Phone Number"
             android:layout_width="match_parent"
@@ -32,8 +32,22 @@
             app:met_maxCharacters="11"
             app:met_primaryColor="@android:color/white"
             app:met_singleLineEllipsis="true"
-            />
-        <com.rengwuxian.materialedittext.MaterialEditTextView
+            />-->
+
+        <EditText
+            android:id="@+id/edtPhone"
+            android:hint="@string/PhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/white"
+
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:inputType="phone" />
+        <!-- android:text="@integer/tejnum"-->
+
+
+        <!-- <com.rengwuxian.materialedittext.MaterialEditTextView
             android:id="@+id/edtName"
             android:hint="@string/Name"
             android:layout_width="match_parent"
@@ -49,9 +63,20 @@
             app:met_primaryColor="@android:color/white"
             app:met_singleLineEllipsis="true"
 
-            />
+            /> -->
+        <EditText
+            android:id="@+id/edtName"
+            android:hint="@string/Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/white"
 
-        <com.rengwuxian.materialedittext.MaterialEditTextView
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:inputType="phone" />
+        <!-- android:text="@string/Tejaswi"-->
+
+        <!-- <com.rengwuxian.materialedittext.MaterialEditTextView
             android:id="@+id/edtPassword"
             android:hint="@string/Password"
             android:layout_width="match_parent"
@@ -67,11 +92,22 @@
             app:met_primaryColor="@android:color/white"
             app:met_singleLineEllipsis="true"
 
-            />
+            /> -->
+        <EditText
+            android:id="@+id/edtPassword"
+            android:hint="@string/Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/white"
+
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:inputType="phone" />
+        <!--android:text="@string/tejpass"-->
 
     </LinearLayout>
 
-    <info.hoang8f.widget.FButton
+    <!--<info.hoang8f.widget.FButton
         android:id="@+id/btnSignUp"
         android:text="@string/SignUp"
         android:textColor="@android:color/white"
@@ -85,6 +121,17 @@
         app:shadowColor="@android:color/black"
         app:shadowEnabled="true"
         app:cornerRadius="4dp"
-        />
+        />-->
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/btnSignUp"
+        android:elevation="2dp"
+        android:text="@string/SignUp"
+        android:textColor="@android:color/white"/>
 
 </RelativeLayout>
