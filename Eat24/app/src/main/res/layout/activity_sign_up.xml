@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/login"
+
     tools:context=".SignUp">
 
 
@@ -18,11 +19,11 @@
 
         <com.rengwuxian.materialedittext.MaterialEditTextView
             android:id="@+id/edtPhone"
-            android:hint="Phone Number"
+            android:hint="@name/Phone Number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColorHint="@android:color/white"
-            android:text="4084429317"
+            android:text="@integer/tejnum"
             android:textColor="@android:color/white"
             android:textSize="34sp"
             android:inputType="phone"
@@ -34,11 +35,11 @@
             />
         <com.rengwuxian.materialedittext.MaterialEditTextView
             android:id="@+id/edtName"
-            android:hint="Name"
+            android:hint="@string/Name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColorHint="@android:color/white"
-            android:text="Tejaswi"
+            android:text="@string/Tejaswi"
             android:textColor="@android:color/white"
             android:textSize="34sp"
             android:inputType="phone"
@@ -52,11 +53,11 @@
 
         <com.rengwuxian.materialedittext.MaterialEditTextView
             android:id="@+id/edtPassword"
-            android:hint="Password"
+            android:hint="@string/Password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColorHint="@android:color/white"
-            android:text="1234"
+            android:text="@string/tejpass"
             android:textColor="@android:color/white"
             android:textSize="34sp"
             android:inputType="phone"
@@ -72,7 +73,7 @@
 
     <info.hoang8f.widget.FButton
         android:id="@+id/btnSignUp"
-        android:text="Sign Up"
+        android:text="@string/SignUp"
         android:textColor="@android:color/white"
         android:layout_marginRight="8dp"
         android:layout_marginLeft="8dp"

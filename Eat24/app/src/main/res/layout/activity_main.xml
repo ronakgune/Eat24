@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
+
     tools:context=".MainActivity">
+    <!-- android:alpha="0.4"-->
 
     <LinearLayout
         android:orientation="vertical"
@@ -16,8 +18,8 @@
         <ImageView
             android:layout_width="200dp"
             android:layout_height="200dp"
-            android:src="@drawable/eat24" />
-
+            android:src="@drawable/eat24"
+            />
 
     </LinearLayout>
     
@@ -29,34 +31,34 @@
         android:orientation="horizontal"
         >
 
-        <info.hoang8f.widget.FButton
-            android:id="@+id/btnSignUp"
-            android:text="Sign Up"
-            android:textColor="@android:color/white"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            app:buttonColor="@color/btnSignUp"
-            app:shadowColor="@android:color/black"
-            app:shadowEnabled="true"
-            app:cornerRadius="4dp"
-            />
+                <info.hoang8f.widget.FButton
+                    android:id="@+id/btnSignIn"
+                    android:text="@string/SignIn"
+                    android:textColor="@android:color/white"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:buttonColor="@color/btnSignActive"
+                    app:shadowColor="@android:color/black"
+                    app:shadowEnabled="true"
+                    app:cornerRadius="4dp"
+                    />
 
-        <info.hoang8f.widget.FButton
-            android:id="@+id/btnSignIn"
-            android:text="Sign In"
-            android:textColor="@android:color/white"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            app:buttonColor="@color/btnSignActive"
-            app:shadowColor="@android:color/black"
-            app:shadowEnabled="true"
-            app:cornerRadius="4dp"
-            />
+                <info.hoang8f.widget.FButton
+                    android:id="@+id/btnSignUp"
+                    android:text="@string/SignUp"
+                    android:textColor="@android:color/white"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:buttonColor="@color/btnSignActive"
+                    app:shadowColor="@android:color/black"
+                    app:shadowEnabled="true"
+                    app:cornerRadius="4dp"
+                    />
 
-    </LinearLayout>
-    
-</RelativeLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
