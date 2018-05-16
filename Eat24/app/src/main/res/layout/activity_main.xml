@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/eat24_main"
+    android:background="@drawable/back"
 
     tools:context=".MainActivity">
     <!-- android:alpha="0.4"-->
@@ -46,10 +46,10 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:background="@color/btnSignActive"
+            android:background="#FFF"
             android:elevation="2dp"
             android:text="@string/SignIn"
-            android:textColor="@android:color/white"/>
+            android:textColor="#000"/>
 
 
         <!-- <info.hoang8f.widget.FButton
@@ -72,10 +72,10 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:background="@color/btnSignActive"
+            android:background="#FFF"
             android:elevation="2dp"
             android:text="@string/SignUp"
-            android:textColor="@android:color/white"/>
+            android:textColor="#000"/>
 
 
             </LinearLayout>
