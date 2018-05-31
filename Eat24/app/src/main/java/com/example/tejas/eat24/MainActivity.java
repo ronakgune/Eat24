@@ -1,50 +1,53 @@
-package com.example.tejas.eat24;
+package com.example.poojanshah.recyclerview;
 
-import android.content.Intent;
-import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnSignIn,btnSignUp;
-    TextView txtSlogan;
+    private RecyclerView recyclerView;
+    private RecyclerView.Adapter adapter;
+
+    private List<ListItem> listItems;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnSignIn = (Button)findViewById(R.id.btnSignIn);
-        btnSignUp = (Button)findViewById(R.id.btnSignUp);
+        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-       // txtSlogan = (TextView)findViewById(R.id.txtSlogan);
-        Typeface face = Typeface.createFromAsset(getAssets(),"fonts/Nabila.ttf");
+        listItems = new ArrayList<>();
 
-        btnSignIn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        for(int i = 0; i<=10; i++){
+            ListItem listItem = new ListItem(
+                    "heading " + (i+1),
+
+                    "Some Text................."
+
+            );
+
+            listItems.add(listItem);
 
             }
-        });
 
-        btnSignUp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent signUp = new Intent(MainActivity.this,SignUp.class);
-                startActivity(signUp);
-            }
-        });
+            adapter = new MyAdapter(listItems, this);
 
-        btnSignIn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent signIn = new Intent(MainActivity.this,SignIn.class);
-                startActivity(signIn);
-            }
-        });
+            recyclerView.setAdapter(adapter);
+
+
+
+
+        }
+
+
     }
-}
