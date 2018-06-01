@@ -4,80 +4,237 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back"
-
     tools:context=".MainActivity">
-    <!-- android:alpha="0.4"-->
+    <!-- android:background="@drawable/back" -->
 
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:orientation="vertical">
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
 
-    </LinearLayout>
-    
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:weightSum="2"
-        android:layout_alignParentBottom="true"
-        android:orientation="horizontal"
-        >
+        <RelativeLayout
+            android:layout_width="394dp"
+            android:layout_height="591dp">
 
-               <!-- <info.hoang8f.widget.FButton
-                    android:id="@+id/btnSignIn"
-                    android:text="@string/SignIn"
-                    android:textColor="@android:color/white"
-                    android:layout_weight="1"
-                    android:layout_width="0dp"
+            <!-- <Button
+                android:id="@+id/button_signin"
+                android:layout_width="184dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/relativeLayout1"
+                android:layout_alignTop="@+id/button_signin"
+                android:layout_marginEnd="2dp"
+                android:background="@color/colorPrimary"
+                android:fontFamily="sans-serif-medium"
+                android:text="SIGN IN"
+                android:textColor="@color/white" /> -->
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:animateLayoutChanges="false"
+                android:background="@color/colorPrimary"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/circle"
+                    android:padding="10dp"
+                    android:src="@drawable/img_authentication"
+                    android:tint="@color/white" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    app:buttonColor="@color/btnSignActive"
-                    app:shadowColor="@android:color/black"
-                    app:shadowEnabled="true"
-                    app:cornerRadius="4dp"
-                    /> -->
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="LOGIN"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
+            </LinearLayout>
 
-        <Button
-            android:id="@+id/btnSignIn"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:background="#FFF"
-            android:elevation="2dp"
-            android:text="@string/SignIn"
-            android:textColor="#000"/>
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="20dp"
+                android:layout_height="21dp"
+                android:layout_below="@+id/linearLayout1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-10dp"
+                android:rotation="45"
+                android:src="@drawable/square" />
 
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="253dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView1"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp">
 
-        <!-- <info.hoang8f.widget.FButton
-                    android:id="@+id/btnSignUp"
-                    android:text="@string/SignUp"
-                    android:textColor="@android:color/white"
-                    android:layout_weight="1"
-                    android:layout_width="0dp"
+                <ImageView
+                    android:id="@+id/imageView_userIcon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="69dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/img_email"
+                    android:tint="@color/white" />
+
+                <EditText
+                    android:layout_width="144dp"
                     android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    app:buttonColor="@color/btnSignActive"
-                    app:shadowColor="@android:color/black"
-                    app:shadowEnabled="true"
-                    app:cornerRadius="4dp"
-                    /> -->
+                    android:layout_alignBottom="@+id/imageView_userIcon"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/imageView_userIcon"
+                    android:background="@color/editTextBG"
+                    android:hint="@string/Email"
+                    android:paddingLeft="20dp"
+                    android:textSize="15sp" />
 
-        <Button
-            android:id="@+id/btnSignUp"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:background="#FFF"
-            android:elevation="2dp"
-            android:text="@string/SignUp"
-            android:textColor="#000"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout1"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:id="@+id/imageView_passwordIcon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="67dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/img_authentication"
+                    android:tint="@color/white" />
+
+                <EditText
+                    android:layout_width="146dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView_passwordIcon"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/imageView_passwordIcon"
+                    android:background="@color/editTextBG"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="20dp"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button_signin"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-95dp">
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/button_signin"
+                android:layout_width="186dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/relativeLayout1"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="239dp"
+                android:background="@color/colorPrimary"
+                android:fontFamily="sans-serif-medium"
+                android:text="SIGN IN"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/button_signin"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:layerType="software"
+                android:src="@drawable/dash" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="29dp"
+                android:layout_alignEnd="@+id/linearLayout2"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="202dp"
+                android:text="Or Login with"
+                android:textColor="@color/textColor"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="88dp">
+
+                <ImageView
+                    android:layout_width="43dp"
+                    android:layout_height="50dp"
+                    android:background="@color/facebookBlue"
+                    android:padding="10dp"
+                    android:src="@drawable/img_facebook" />
 
 
             </LinearLayout>
 
+            <TextView
+                android:id="@+id/textview3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-88dp"
+                android:text="Dont have an account?" />
+
+            <Button
+                android:id="@+id/button_signup"
+                android:layout_width="185dp"
+                android:layout_height="34dp"
+                android:layout_below="@+id/textview3"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorPrimary"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/SignUp"
+                android:textColor="@color/white" />
+
         </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+</RelativeLayout>

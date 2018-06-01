@@ -7,10 +7,12 @@
     <string name="PhoneNumber">Phone Number</string>
     <integer name="tejnum">123456</integer>
     <string name="Name">Name</string>
+    <string name="Email">E-mail Address</string>
     <string name="Tejaswi">Tejaswi</string>
     <string name="Password">Password</string>
     <string name="tejpass">Tejpass</string>
     <string name="splash">Eat24</string>
+    <string name="TextView">"      Developed by: Tejaswi, Ronak and Poojan"</string>
 
  //Onboarding screen
     <string name="next">Next</string>

@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <!--<com.rengwuxian.materialedittext.MaterialEditTextView
+        <!-- <com.rengwuxian.materialedittext.MaterialEditTextView
             android:id="@+id/edtPhone"
             android:hint="@string/PhoneNumber"
             android:layout_width="match_parent"
@@ -67,7 +67,7 @@
         android:textColorHint="@android:color/white"
         android:textColor="@android:color/white"
         android:textSize="30sp"
-        android:inputType="phone" />
+        android:inputType="textEmailAddress" />
     <!--android:text="@string/Tejaswi"-->
 
        <!-- <com.rengwuxian.materialedittext.MaterialEditTextView
@@ -94,10 +94,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColorHint="@android:color/white"
-
         android:textColor="@android:color/white"
         android:textSize="30sp"
-        android:inputType="phone" />
+        android:inputType="textPassword" />
     <!--android:text="@string/tejpass"-->
 
     </LinearLayout>

@@ -4,44 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Splash"
-    android:background="#FFF">
+    android:background="#FFF"
+    tools:context=".Splash">
 
-    <android.support.constraint.ConstraintLayout
-        android:id="@+id/linearLayout"
+
+    <ImageView
+        android:id="@+id/iv"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="vertical">
+        android:layout_height="471dp"
+        android:layout_alignParentStart="true"
 
-        <ImageView
-            android:id="@+id/iv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="84dp"
-            android:src="@drawable/splash_logo"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:background="#20b24e"
+        android:cropToPadding="false"
+        android:orientation="vertical"
+        android:scaleType="centerCrop"
+        android:src="@drawable/splash1" />
 
-        <TextView
-            android:id="@+id/tv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginStart="65dp"
-            android:layout_marginTop="8dp"
-            android:text="@string/splash"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="30sp"
-            android:textStyle="italic"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/iv"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.48" />
-    </android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/TextView"/>
+
+
+
+    <!-- <TextView
+             android:id="@+id/tv"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="8dp"
+             android:layout_marginStart="65dp"
+             android:layout_marginTop="8dp"
+             android:text="@string/splash"
+             android:textColor="@color/colorPrimaryDark"
+             android:textSize="30sp"
+             android:textStyle="italic"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toStartOf="@+id/iv"
+             app:layout_constraintTop_toTopOf="parent"
+             app:layout_constraintVertical_bias="0.48" /> -->
 
 
 </RelativeLayout>

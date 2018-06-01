@@ -4,12 +4,238 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back"
+
 
     tools:context=".SignUp">
 
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
 
-    <LinearLayout
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="499dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/circle"
+                    android:padding="10dp"
+                    android:src="@drawable/img_register"
+                    android:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="REGISTER"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/linearLayout1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-10dp"
+                android:rotation="45"
+                android:src="@drawable/square" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView1"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:id="@+id/imgView_userIcon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/img_user"
+                    android:tint="@color/white" />
+
+                <EditText
+                    android:id="@+id/edituser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imgView_userIcon"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/imgView_userIcon"
+                    android:background="@color/editTextBG"
+                    android:hint="Username"
+                    android:paddingLeft="20dp"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout1"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:id="@+id/imgView_passwordIcon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/img_authentication"
+                    android:tint="@color/white" />
+
+                <EditText
+                    android:id="@+id/editpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imgView_passwordIcon"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/imgView_passwordIcon"
+                    android:background="@color/editTextBG"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="20dp"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout2"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:id="@+id/imgView_repasswordIcon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/img_authentication"
+                    android:tint="@color/white" />
+
+                <EditText
+                    android:id="@+id/editrepass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imgView_repasswordIcon"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/imgView_repasswordIcon"
+                    android:background="@color/editTextBG"
+                    android:hint="Re-type Password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="20dp"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout3"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:id="@+id/imgView_emailIcon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/img_email"
+                    android:tint="@color/white" />
+
+                <EditText
+                    android:id="@+id/editemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imgView_emailIcon"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/imgView_emailIcon"
+                    android:background="@color/editTextBG"
+                    android:hint="Email"
+                    android:paddingLeft="20dp"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_signUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="34dp"
+                android:background="@color/colorPrimary"
+                android:fontFamily="sans-serif-medium"
+                android:text="SIGN UP"
+                android:textColor="@color/white" />
+
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <LinearLayout
         android:orientation="vertical"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
@@ -17,7 +243,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <!-- <com.rengwuxian.materialedittext.MaterialEditTextView
+         <com.rengwuxian.materialedittext.MaterialEditTextView
             android:id="@+id/edtPhone"
             android:hint="@name/Phone Number"
             android:layout_width="match_parent"
@@ -32,7 +258,7 @@
             app:met_maxCharacters="11"
             app:met_primaryColor="@android:color/white"
             app:met_singleLineEllipsis="true"
-            />-->
+            />
 
         <EditText
             android:id="@+id/edtPhone"
@@ -44,10 +270,10 @@
             android:textColor="@android:color/white"
             android:textSize="30sp"
             android:inputType="phone" />
-        <!-- android:text="@integer/tejnum"-->
+         android:text="@integer/tejnum"
 
 
-        <!-- <com.rengwuxian.materialedittext.MaterialEditTextView
+        <com.rengwuxian.materialedittext.MaterialEditTextView
             android:id="@+id/edtName"
             android:hint="@string/Name"
             android:layout_width="match_parent"
@@ -63,7 +289,7 @@
             app:met_primaryColor="@android:color/white"
             app:met_singleLineEllipsis="true"
 
-            /> -->
+            />
         <EditText
             android:id="@+id/edtName"
             android:hint="@string/Name"
@@ -74,9 +300,9 @@
             android:textColor="@android:color/white"
             android:textSize="30sp"
             android:inputType="phone" />
-        <!-- android:text="@string/Tejaswi"-->
+         android:text="@string/Tejaswi"
 
-        <!-- <com.rengwuxian.materialedittext.MaterialEditTextView
+         <com.rengwuxian.materialedittext.MaterialEditTextView
             android:id="@+id/edtPassword"
             android:hint="@string/Password"
             android:layout_width="match_parent"
@@ -92,7 +318,7 @@
             app:met_primaryColor="@android:color/white"
             app:met_singleLineEllipsis="true"
 
-            /> -->
+            />
         <EditText
             android:id="@+id/edtPassword"
             android:hint="@string/Password"
@@ -103,11 +329,11 @@
             android:textColor="@android:color/white"
             android:textSize="30sp"
             android:inputType="phone" />
-        <!--android:text="@string/tejpass"-->
+        android:text="@string/tejpass"
 
     </LinearLayout>
 
-    <!--<info.hoang8f.widget.FButton
+    <info.hoang8f.widget.FButton
         android:id="@+id/btnSignUp"
         android:text="@string/SignUp"
         android:textColor="@android:color/white"
@@ -121,7 +347,7 @@
         app:shadowColor="@android:color/black"
         app:shadowEnabled="true"
         app:cornerRadius="4dp"
-        />-->
+        />
 
     <Button
         android:id="@+id/btnSignUp"
@@ -132,6 +358,6 @@
         android:background="@color/btnSignUp"
         android:elevation="2dp"
         android:text="@string/SignUp"
-        android:textColor="@android:color/white"/>
+        android:textColor="@android:color/white"/> -->
 
 </RelativeLayout>

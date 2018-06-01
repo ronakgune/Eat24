@@ -19,8 +19,8 @@ import com.rengwuxian.materialedittext.MaterialEditText;
 
 public class SignUp extends AppCompatActivity {
 
-    EditText edtPhone,edtName,edtPassword;
-    Button btnSignUp;
+    EditText edituser,editpass,editrepass,editemail;
+    Button btn_signUp;
 
 
     @Override
@@ -28,11 +28,16 @@ public class SignUp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
-        edtName = (EditText) findViewById(R.id.edtName);
-        edtPassword = (EditText) findViewById(R.id.edtPassword);
-        edtPhone = (EditText) findViewById(R.id.edtPhone);
+        edituser = (EditText) findViewById(R.id.edituser);
+        editpass = (EditText) findViewById(R.id.editpass);
+        editrepass = (EditText) findViewById(R.id.editrepass);
+        editemail = (EditText) findViewById(R.id.editemail);
 
-        btnSignUp = (Button)findViewById(R.id.btnSignUp);
+        //edtName = (EditText) findViewById(R.id.edtName);
+        //edtPassword = (EditText) findViewById(R.id.edtPassword);
+        //edtPhone = (EditText) findViewById(R.id.edtPhone);
+
+        btn_signUp = (Button)findViewById(R.id.btn_signUp);
 
         //Init Firebase
 
@@ -41,27 +46,27 @@ public class SignUp extends AppCompatActivity {
 
 
 
-        btnSignUp.setOnClickListener(new View.OnClickListener() {
+        btn_signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 final ProgressDialog mDialog = new ProgressDialog(SignUp.this);
-                mDialog.setMessage("Please waiting...");
+                mDialog.setMessage("Please wait...");
                 mDialog.show();
 
                 table_user.addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
-                        //Check if already user phone registered
-                        if(dataSnapshot.child(edtPhone.getText().toString()).exists()) {
+                        //Check if already user email registered
+                        if(dataSnapshot.child(editemail.getText().toString()).exists()) {
                             mDialog.dismiss();
-                            Toast.makeText(SignUp.this,"Phone Number already registered", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(SignUp.this,"Email already registered", Toast.LENGTH_SHORT).show();
                         }
                         else {
                             mDialog.dismiss();
-                            User user = new User(edtName.getText().toString(),edtPassword.getText().toString());
-                            table_user.child(edtPhone.getText().toString()).setValue(user);
-                            Toast.makeText(SignUp.this,"SignUp Successfully", Toast.LENGTH_SHORT).show();
+                            User user = new User(edituser.getText().toString(),editpass.getText().toString());
+                            table_user.child(editemail.getText().toString()).setValue(user);
+                            Toast.makeText(SignUp.this,"SignUp Successful", Toast.LENGTH_SHORT).show();
                             finish();
 
                         }
