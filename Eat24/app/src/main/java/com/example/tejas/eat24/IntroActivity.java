@@ -38,11 +38,11 @@ public class IntroActivity extends Activity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_intro);
 
-        myLayout = findViewById(R.id.activity_intro);
+        myLayout = (RelativeLayout) findViewById(R.id.rel_intro);
 
         animationDrawable = (AnimationDrawable) myLayout.getBackground();
-        animationDrawable.setEnterFadeDuration(1000);
-        animationDrawable.setExitFadeDuration(1000);
+        animationDrawable.setEnterFadeDuration(1500);
+        animationDrawable.setExitFadeDuration(1500);
         animationDrawable.start();
 
         // Onboarding screen to disappear after first launch------
