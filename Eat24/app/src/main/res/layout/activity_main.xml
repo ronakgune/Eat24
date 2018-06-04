@@ -99,6 +99,7 @@
                     android:tint="@color/white" />
 
                 <EditText
+                    android:id="@+id/editEmail"
                     android:layout_width="144dp"
                     android:layout_height="wrap_content"
                     android:layout_alignBottom="@+id/imageView_userIcon"
@@ -106,6 +107,7 @@
                     android:layout_toRightOf="@+id/imageView_userIcon"
                     android:background="@color/editTextBG"
                     android:hint="@string/Email"
+                    android:inputType="textEmailAddress"
                     android:paddingLeft="20dp"
                     android:textSize="15sp" />
 
@@ -133,6 +135,7 @@
                     android:tint="@color/white" />
 
                 <EditText
+                    android:id="@+id/editPass"
                     android:layout_width="146dp"
                     android:layout_height="wrap_content"
                     android:layout_alignBottom="@+id/imageView_passwordIcon"

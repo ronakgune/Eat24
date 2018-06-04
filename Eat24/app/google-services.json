@@ -15,12 +15,8 @@
       },
       "oauth_client": [
         {
-          "client_id": "336083169686-dieqs4ksk0flaironfl0634e5ndv2eir.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.tejas.eat24",
-            "certificate_hash": "325ef42880ec1f9203f08d465b966d7250b966fe"
-          }
+          "client_id": "336083169686-3ruruh5rdtr0va2nd1soedre7aet90gi.apps.googleusercontent.com",
+          "client_type": 3
         },
         {
           "client_id": "336083169686-3ruruh5rdtr0va2nd1soedre7aet90gi.apps.googleusercontent.com",
