@@ -24,4 +24,6 @@
     <string name="desc_slide2">Description and pic</string>
     <string name="title_slide3">Slide 3</string>
     <string name="desc_slide3">Description and pic</string>
+    <string name="description">Description</string>
+    <string name="heading">Heading</string>
 </resources>
