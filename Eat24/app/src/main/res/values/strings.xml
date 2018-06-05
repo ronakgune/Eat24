@@ -24,10 +24,15 @@
     <string name="desc_slide2">Description and pic</string>
     <string name="title_slide3">Slide 3</string>
     <string name="desc_slide3">Description and pic</string>
+<<<<<<< HEAD
     <string name="title_slide4">Slide 4</string>
     <string name="desc_slide4">Description and pic</string>
     <string name="title_slide5">Slide 5</string>
     <string name="desc_slide5">Description and pic</string>
     <string name="title_slide6">Slide 6</string>
     <string name="desc_slide6">Description and pic</string>
+=======
+    <string name="description">Description</string>
+    <string name="heading">Heading</string>
+>>>>>>> 8a84c11fa261ebf407d51234319b9919e7889a37
 </resources>

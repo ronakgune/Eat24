@@ -44,9 +44,11 @@ public class MainActivity extends AppCompatActivity {
                String email_val = email.getText().toString();
                String pass_val = password.getText().toString();
 
+               //Check if email is empty
                if(TextUtils.isEmpty(email_val)){
                    email.setError("Please Enter Email");
                }
+               //Check if password is empty
                else if(TextUtils.isEmpty(pass_val)){
                    password.setError("Please Enter Password");
                }else{
@@ -59,6 +61,8 @@ public class MainActivity extends AppCompatActivity {
 //                                       Log.d(TAG, "signInWithEmail:success");
                                        Toast.makeText(MainActivity.this, "Authentication Successful",
                                                Toast.LENGTH_SHORT).show();
+                                       Intent home = new Intent(MainActivity.this, home.class);
+                                       startActivity(home);
                                        FirebaseUser user = mAuth.getCurrentUser();
 //                                       updateUI(user);
                                    } else {
@@ -87,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
         btnSignUp.setOnClickListener(new View.OnClickListener() {
           @Override
         public void onClick(View v) {
-          Intent signUp = new Intent(MainActivity.this,SignUp.class);
+          Intent signUp = new Intent(MainActivity.this,home.class);
           startActivity(signUp);
           }
         });
