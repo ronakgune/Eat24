@@ -15,10 +15,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
 
 public class IntroActivity extends Activity {
 
@@ -30,6 +33,8 @@ public class IntroActivity extends Activity {
     private Button btnSkip, btnNext;
     RelativeLayout myLayout;
     AnimationDrawable animationDrawable;
+    LinearLayout l1,l2,l3,l4,l5,l6,ld1,ld2,ld3,ld4,ld5,ld6;
+    Animation uptodown,downtoup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,12 +43,26 @@ public class IntroActivity extends Activity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_intro);
 
-        myLayout = (RelativeLayout) findViewById(R.id.rel_intro);
+//        uptodown = AnimationUtils.loadAnimation(this,R.anim.uptodown);
+//        downtoup = AnimationUtils.loadAnimation(this, R.anim.downtoup);
+//        l1.setAnimation(uptodown);
+//        ld1.setAnimation(downtoup);
+//        l2.setAnimation(uptodown);
+//        ld2.setAnimation(downtoup);
+//        l3.setAnimation(uptodown);
+//        ld3.setAnimation(downtoup);
+//        l4.setAnimation(uptodown);
+//        ld4.setAnimation(downtoup);
+//        l5.setAnimation(uptodown);
+//        ld5.setAnimation(downtoup);
+//        l6.setAnimation(uptodown);
+//        ld6.setAnimation(downtoup);
 
-        animationDrawable = (AnimationDrawable) myLayout.getBackground();
-        animationDrawable.setEnterFadeDuration(1500);
-        animationDrawable.setExitFadeDuration(1500);
-        animationDrawable.start();
+       // myLayout = (RelativeLayout) findViewById(R.id.rel_intro);
+       // animationDrawable = (AnimationDrawable) myLayout.getBackground();
+        // animationDrawable.setEnterFadeDuration(1500);
+        // animationDrawable.setExitFadeDuration(1500);
+        // animationDrawable.start();
 
         // Onboarding screen to disappear after first launch------
         SharedPreferences share = getSharedPreferences("PREFS",MODE_PRIVATE);
@@ -61,7 +80,10 @@ public class IntroActivity extends Activity {
         layouts = new int[]{
                 R.layout.onboarding_slide1,
                 R.layout.onboarding_slide2,
-                R.layout.onboarding_slide3};
+                R.layout.onboarding_slide3,
+                R.layout.onboarding_slide4,
+                R.layout.onboarding_slide5,
+                R.layout.onboarding_slide6};
 
         // adding bottom dots
         addBottomDots(0);

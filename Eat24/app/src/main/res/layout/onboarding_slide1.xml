@@ -5,16 +5,20 @@
     android:background="@drawable/my_bg_anim">
 
     <LinearLayout
+        android:id="@+id/l1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="141dp"
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
         <ImageView
             android:layout_width="@dimen/img_width"
-            android:layout_height="@dimen/img_height"/>
-            <!-- android:src="@drawable/ic_slide1" -->
+            android:layout_height="@dimen/img_height"
+            android:gravity="center_horizontal"
+            android:src="@drawable/location" />
 
 
         <TextView
@@ -24,6 +28,18 @@
             android:textColor="@android:color/white"
             android:textSize="@dimen/slide_title"
             android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ld1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="194dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"

@@ -5,7 +5,7 @@
     android:background="@drawable/my_bg_anim">
 
     <LinearLayout
-        android:id="@+id/l2"
+        android:id="@+id/l5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -18,13 +18,13 @@
             android:layout_width="@dimen/img_width"
             android:layout_height="@dimen/img_height"
             android:gravity="center_horizontal"
-            android:src="@drawable/restaurant" />
+            android:src="@drawable/payment" />
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/title_slide2"
+            android:text="@string/title_slide5"
             android:textColor="@android:color/white"
             android:textSize="@dimen/slide_title"
             android:textStyle="bold" />
@@ -32,7 +32,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/ld2"
+        android:id="@+id/ld5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -47,7 +47,7 @@
             android:layout_marginTop="20dp"
             android:paddingLeft="@dimen/desc_padding"
             android:paddingRight="@dimen/desc_padding"
-            android:text="@string/desc_slide2"
+            android:text="@string/desc_slide5"
             android:textAlignment="center"
             android:textColor="@android:color/white"
             android:textSize="@dimen/slide_desc" />
